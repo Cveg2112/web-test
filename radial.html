@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Radial Menu</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
+    </head>
+
+    <style>
+    html { height: 100%; font-family: 'Open Sans', sans-serif; }
+    body { height: 100%; margin: 0px; padding:0px;  background-color: #674172; }
+    span::before { content:"+"; }  
+    div.button:hover span::before { content:"-"; }
+        div.container { padding-top:20px; width:200px; height:200px; position: relative; margin: 0 auto; top:20%; }
+            .container a { text-shadow: 0px 0px 5px #222222; color:#674172; text-decoration: none; }
+        div.button { text-align: center; vertical-align: middle; display: table-cell; font-weight: 400; font-size: 38px; color:#674172; box-shadow: 0px 0px 13px #222222; z-index: 100; width:200px; height: 200px; background-color: #2C3E50;  position:relative;  border-radius:50%; }
+        
+            li { padding: 0px; margin-left: 5px; width:90px; height: 90px; box-shadow: 0px 0px 13px #222222; opacity:0; text-align: center; list-style-type: none; visibility:hidden; border-radius: 50%; position: absolute; transition: all 0.2s ease; /*transition-delay:0.5s;*/ overflow: hidden;}
+                li a { position: absolute; }
+            ul { list-style-type: none; text-decoration: none; left: -120px; width:500px; height:200px; top:-120px; position: absolute;  transition: top 0.2s ease; transition-delay:0.5s;}
+            
+            li:nth-of-type(1) { -webkit-transform: rotate(0deg); background-color:#F27935; -webkit-transition-delay: 0.05s }
+            li:nth-of-type(2) { -webkit-transform: rotate(30deg); background-color:#16A085; -webkit-transition-delay: .1s }
+            li:nth-of-type(3) { -webkit-transform: rotate(60deg); background-color:#336E7B; -webkit-transition-delay: .15s }
+            li:nth-of-type(4) { -webkit-transform: rotate(90deg); background-color:#D64541; -webkit-transition-delay: .2s }
+            li:nth-of-type(5) { -webkit-transform: rotate(120deg); background-color:#F27935; -webkit-transition-delay: .25s }
+            li:nth-of-type(6) { -webkit-transform: rotate(150deg); background-color:#16A085; -webkit-transition-delay: .3s }
+            li:nth-of-type(7) { -webkit-transform: rotate(180deg); background-color:#336E7B; -webkit-transition-delay: .35s }
+            li:nth-of-type(8) { -webkit-transform: rotate(210deg); background-color:#D64541; -webkit-transition-delay: .4s }
+            li:nth-of-type(9) { -webkit-transform: rotate(240deg); background-color:#F27935; -webkit-transition-delay: .45s }
+            li:nth-of-type(10) { -webkit-transform: rotate(270deg); background-color:#16A085; -webkit-transition-delay: .5s }
+            li:nth-of-type(11) { -webkit-transform: rotate(300deg); background-color:#336E7B; -webkit-transition-delay: .55s }
+            li:nth-of-type(12) { -webkit-transform: rotate(330deg); background-color:#D64541; -webkit-transition-delay: .6s }
+
+            div.container:hover  li { -webkit-transform-origin:200% 200%; visibility:visible; opacity:1; transition: all 0.4s ease; }
+                li:hover { background-color: #fff; }
+            div.container:hover  ul { top:-70px; transition: top 0.2s ease; }
+            
+    </style>
+
+    <body>
+    <div class="container">
+        <a href="#"><div class="button"><span></span></div></a>
+        <ul class="drop-menu">
+            <li class="poo"><a href="">Aa</a></li>
+            <li><a href="">Bb</a></li>
+            <li><a href="">Cc</a></li>
+            <li><a href="">Dd</a></li>
+            <li><a href="">Ee</a></li>
+            <li><a href="">Ff</a></li>
+            <li><a href="">Gg</a></li>
+            <li><a href="">Hh</a></li>
+            <li><a href="">Ii</a></li>
+            <li><a href="">Jj</a></li>
+            <li><a href="">Kk</a></li>
+            <li><a href="">Ll</a></li>
+        </ul>
+
+        </div>
+    </body>
+
+</html>
+
